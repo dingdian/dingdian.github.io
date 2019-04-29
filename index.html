@@ -189,7 +189,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Basculer la barre de navigation">
+    <button aria-label="Navigationsleiste an/ausschalten">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -217,7 +217,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Accueil</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Startseite</a>
 
   </li>
         
@@ -234,7 +234,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archiv</a>
 
   </li>
 
@@ -270,582 +270,6 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/28/文章测试/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/28/文章测试/" class="post-title-link" itemprop="url">文章测试</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posté le</span>
-              
-
-              
-                
-              
-
-              <time title="Article créé le: 2019-04-28 20:42:14 / Mise à jour le: 20:42:34" itemprop="dateCreated datePublished" datetime="2019-04-28T20:42:14+08:00">2019-04-28</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="福昕文档保护大师接口文档"><a href="#福昕文档保护大师接口文档" class="headerlink" title="福昕文档保护大师接口文档"></a>福昕文档保护大师接口文档</h1><p>版本修订信息</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">版本号</th>
-<th style="text-align:left">完成时间</th>
-<th style="text-align:left">拟稿与修改人</th>
-<th style="text-align:left">发布时间</th>
-<th style="text-align:left">变更说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">v0.01</td>
-<td style="text-align:left">2018/02/08</td>
-<td style="text-align:left">林传武</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">新建</td>
-</tr>
-<tr>
-<td style="text-align:left">V0.02</td>
-<td style="text-align:left">2018/03/01</td>
-<td style="text-align:left"></td>
-<td style="text-align:left"></td>
-<td style="text-align:left">接口实名状态判断,增加创建文档返回权限，增加统计接口</td>
-</tr>
-<tr>
-<td style="text-align:left">V0.04</td>
-<td style="text-align:left">2018/03/07</td>
-<td style="text-align:left"></td>
-<td style="text-align:left"></td>
-<td style="text-align:left">增加文档权限接口，读者权限接口</td>
-</tr>
-</tbody>
-</table>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p>[TOC]</p>
-<h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><p>测试环境host :  <code>114.215.119.124 baohu.foxitcloud.cn</code></p>
-<h2 id="全局定义"><a href="#全局定义" class="headerlink" title="全局定义"></a>全局定义</h2><h3 id="baseUrl"><a href="#baseUrl" class="headerlink" title="baseUrl"></a>baseUrl</h3><p><a href="http://baohu.foxitcloud.cn/api" target="_blank" rel="noopener">http://baohu.foxitcloud.cn/api</a></p>
-<h3 id="全局错误信息"><a href="#全局错误信息" class="headerlink" title="全局错误信息"></a>全局错误信息</h3><table>
-<thead>
-<tr>
-<th style="text-align:left">错误码</th>
-<th style="text-align:left">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">200</td>
-<td style="text-align:left">成功</td>
-</tr>
-<tr>
-<td style="text-align:left">400</td>
-<td style="text-align:left">认证失败</td>
-</tr>
-<tr>
-<td style="text-align:left">401</td>
-<td style="text-align:left">参数错误</td>
-</tr>
-<tr>
-<td style="text-align:left">500</td>
-<td style="text-align:left">系统错误</td>
-</tr>
-</tbody>
-</table>
-<h3 id="Rsponse返回体"><a href="#Rsponse返回体" class="headerlink" title="Rsponse返回体"></a>Rsponse返回体</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"ret"</span>: <span class="number">200</span>,</span><br><span class="line">    <span class="attr">"msg"</span>: <span class="string">"成功"</span>,</span><br><span class="line">    <span class="attr">"data"</span>:Object</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="1-创建文档"><a href="#1-创建文档" class="headerlink" title="1.创建文档"></a>1.创建文档</h2><h3 id="请求路径"><a href="#请求路径" class="headerlink" title="请求路径"></a>请求路径</h3><p><code>GET /shiro-foxit/createDocument</code></p>
-<h3 id="头部信息"><a href="#头部信息" class="headerlink" title="头部信息"></a>头部信息</h3><p>content-type : application/x-www-form-urlencoded</p>
-<h3 id="参数列表"><a href="#参数列表" class="headerlink" title="参数列表"></a>参数列表</h3><table>
-<thead>
-<tr>
-<th style="text-align:left">参数名</th>
-<th style="text-align:left">必填</th>
-<th style="text-align:left">类型</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">filename</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">String</td>
-<td style="text-align:left">文件名</td>
-</tr>
-<tr>
-<td style="text-align:left">pageCount</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">int</td>
-<td style="text-align:left">文档页数</td>
-</tr>
-<tr>
-<td style="text-align:left">previewStart</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">int</td>
-<td style="text-align:left">文档预览起始页</td>
-</tr>
-<tr>
-<td style="text-align:left">previewEnd</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">int</td>
-<td style="text-align:left">文档预览结束页</td>
-</tr>
-<tr>
-<td style="text-align:left">ticket</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">String</td>
-<td style="text-align:left">鉴权票据</td>
-</tr>
-</tbody>
-</table>
-<h3 id="返回data信息"><a href="#返回data信息" class="headerlink" title="返回data信息"></a>返回data信息</h3><table>
-<thead>
-<tr>
-<th>属性</th>
-<th>类型</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>docId</td>
-<td>String</td>
-<td>文档ID</td>
-</tr>
-<tr>
-<td>docPassword</td>
-<td>String</td>
-<td>文档密码（偏移14位）</td>
-</tr>
-<tr>
-<td>permissionId</td>
-<td>int</td>
-<td>10001  只读   目前只有这个权限</td>
-</tr>
-<tr>
-<td>permissionDesc</td>
-<td>String</td>
-<td>权限文本描述</td>
-</tr>
-<tr>
-<td>productId</td>
-<td>int</td>
-<td>产品对应的ID</td>
-</tr>
-</tbody>
-</table>
-<h3 id="错误码"><a href="#错误码" class="headerlink" title="错误码"></a>错误码</h3><table>
-<thead>
-<tr>
-<th style="text-align:left">错误码</th>
-<th style="text-align:left">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">402</td>
-<td style="text-align:left">未实名认证</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"ret"</span>: <span class="number">200</span>,</span><br><span class="line">    <span class="attr">"msg"</span>: <span class="string">"成功"</span>,</span><br><span class="line">    <span class="attr">"data"</span>: &#123;</span><br><span class="line">        <span class="attr">"docPassword"</span>: <span class="string">"V056clJMV2xScHVyNTVRbA=="</span>,</span><br><span class="line">        <span class="attr">"permissionDesc"</span>: <span class="string">"只读"</span>,</span><br><span class="line">        <span class="attr">"docId"</span>: <span class="string">"606bd5c4276a4447aef0d4b4eafb4161"</span>,</span><br><span class="line">        <span class="attr">"permissionId"</span>: <span class="number">10001</span>,</span><br><span class="line">        <span class="attr">"productId"</span>: <span class="number">10027</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="2-更新文档状态"><a href="#2-更新文档状态" class="headerlink" title="2.更新文档状态"></a>2.更新文档状态</h2><h3 id="请求路径-1"><a href="#请求路径-1" class="headerlink" title="请求路径"></a>请求路径</h3><p><code>GET /shiro-foxit/updateDocumentStatus</code></p>
-<h3 id="头部信息-1"><a href="#头部信息-1" class="headerlink" title="头部信息"></a>头部信息</h3><p>content-type : application/x-www-form-urlencoded</p>
-<h3 id="参数列表-1"><a href="#参数列表-1" class="headerlink" title="参数列表"></a>参数列表</h3><table>
-<thead>
-<tr>
-<th style="text-align:left">参数名</th>
-<th style="text-align:left">必填</th>
-<th style="text-align:left">类型</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">status</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">int</td>
-<td style="text-align:left">文档状态 2：成功  3：失败</td>
-</tr>
-<tr>
-<td style="text-align:left">docId</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">String</td>
-<td style="text-align:left">文档ID</td>
-</tr>
-<tr>
-<td style="text-align:left">ticket</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">String</td>
-<td style="text-align:left">鉴权票据</td>
-</tr>
-</tbody>
-</table>
-<h3 id="错误码-1"><a href="#错误码-1" class="headerlink" title="错误码"></a>错误码</h3><table>
-<thead>
-<tr>
-<th style="text-align:left">错误码</th>
-<th style="text-align:left">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">501</td>
-<td style="text-align:left">文档更新失败</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attr">"ret"</span>:<span class="number">200</span>,</span><br><span class="line">	<span class="attr">"msg"</span>:<span class="string">"更新成功！"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="3-获取文档信息"><a href="#3-获取文档信息" class="headerlink" title="3.获取文档信息"></a>3.获取文档信息</h2><h3 id="请求路径-2"><a href="#请求路径-2" class="headerlink" title="请求路径"></a>请求路径</h3><p><code>GET /getDocumentInfos</code></p>
-<h3 id="头部信息-2"><a href="#头部信息-2" class="headerlink" title="头部信息"></a>头部信息</h3><p>content-type : application/x-www-form-urlencoded</p>
-<h3 id="参数列表-2"><a href="#参数列表-2" class="headerlink" title="参数列表"></a>参数列表</h3><table>
-<thead>
-<tr>
-<th style="text-align:left">参数名</th>
-<th style="text-align:left">必填</th>
-<th style="text-align:left">类型</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">docId</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">String</td>
-<td style="text-align:left">文档ID</td>
-</tr>
-</tbody>
-</table>
-<h3 id="返回data信息-1"><a href="#返回data信息-1" class="headerlink" title="返回data信息"></a>返回data信息</h3><table>
-<thead>
-<tr>
-<th>属性</th>
-<th>类型</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>docId</td>
-<td>String</td>
-<td>文档ID</td>
-</tr>
-<tr>
-<td>docPassword</td>
-<td>String</td>
-<td>文档密码（偏移14位）</td>
-</tr>
-<tr>
-<td>pageCount</td>
-<td>int</td>
-<td>文档总页数</td>
-</tr>
-<tr>
-<td>previewStart</td>
-<td>int</td>
-<td>预览起始页</td>
-</tr>
-<tr>
-<td>previewEnd</td>
-<td>int</td>
-<td>预览结束页</td>
-</tr>
-<tr>
-<td>createTime</td>
-<td>String</td>
-<td>文档创建时间</td>
-</tr>
-<tr>
-<td>isLockSys</td>
-<td>Boolean</td>
-<td>是否被管理员锁定</td>
-</tr>
-<tr>
-<td>isLockAuthor</td>
-<td>Boolean</td>
-<td>是否被作者锁定</td>
-</tr>
-</tbody>
-</table>
-<h3 id="错误码-2"><a href="#错误码-2" class="headerlink" title="错误码"></a>错误码</h3><table>
-<thead>
-<tr>
-<th style="text-align:left">错误码</th>
-<th style="text-align:left">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">502</td>
-<td style="text-align:left">未找到该文档！</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"ret"</span>: <span class="number">200</span>,</span><br><span class="line">    <span class="attr">"msg"</span>: <span class="string">"成功"</span>,</span><br><span class="line">    <span class="attr">"data"</span>: &#123;</span><br><span class="line">        <span class="attr">"docId"</span>: <span class="string">"924965e3270d4264856bdda4e7bb78b7"</span>,</span><br><span class="line">        <span class="attr">"filename"</span>: <span class="string">"dest(73).pdf"</span>,</span><br><span class="line">        <span class="attr">"pageCount"</span>: <span class="number">1</span>,</span><br><span class="line">        <span class="attr">"previewStart"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">"previewEnd"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">"createTime"</span>: <span class="string">"2018-03-06 12:02:31"</span>,</span><br><span class="line">        <span class="attr">"docPassword"</span>: <span class="string">"Y3NuSDJZcWl0WjZrRGtnSQ=="</span>,</span><br><span class="line">        <span class="attr">"isLockSys"</span>: <span class="literal">false</span>,</span><br><span class="line">        <span class="attr">"isLockAuthor"</span>: <span class="literal">false</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="4-获取读者权限"><a href="#4-获取读者权限" class="headerlink" title="4.获取读者权限"></a>4.获取读者权限</h2><h3 id="请求路径-3"><a href="#请求路径-3" class="headerlink" title="请求路径"></a>请求路径</h3><p><code>GET /shiro-foxit/getReaderPermission</code></p>
-<h3 id="头部信息-3"><a href="#头部信息-3" class="headerlink" title="头部信息"></a>头部信息</h3><p>content-type : application/x-www-form-urlencoded</p>
-<h3 id="参数列表-3"><a href="#参数列表-3" class="headerlink" title="参数列表"></a>参数列表</h3><table>
-<thead>
-<tr>
-<th style="text-align:left">参数名</th>
-<th style="text-align:left">必填</th>
-<th style="text-align:left">类型</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">docId</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">String</td>
-<td style="text-align:left">文档ID</td>
-</tr>
-<tr>
-<td style="text-align:left">ticket</td>
-<td style="text-align:left">true</td>
-<td style="text-align:left">String</td>
-<td style="text-align:left">鉴权票据</td>
-</tr>
-</tbody>
-</table>
-<h3 id="返回data信息-2"><a href="#返回data信息-2" class="headerlink" title="返回data信息"></a>返回data信息</h3><table>
-<thead>
-<tr>
-<th>属性</th>
-<th>类型</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>permissionId</td>
-<td>int</td>
-<td>读者权限   （10001  只读   目前只有这个权限）</td>
-</tr>
-</tbody>
-</table>
-<h3 id="错误码-3"><a href="#错误码-3" class="headerlink" title="错误码"></a>错误码</h3><table>
-<thead>
-<tr>
-<th style="text-align:left">错误码</th>
-<th style="text-align:left">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">503</td>
-<td style="text-align:left">读者无权限！</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"ret"</span>: <span class="number">200</span>,</span><br><span class="line">    <span class="attr">"msg"</span>: <span class="string">"成功"</span>,</span><br><span class="line">    <span class="attr">"data"</span>: &#123;</span><br><span class="line">        <span class="attr">"permissionId"</span>: <span class="number">10001</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="5-事件统计接口"><a href="#5-事件统计接口" class="headerlink" title="5.事件统计接口"></a>5.事件统计接口</h2><h3 id="请求路径-4"><a href="#请求路径-4" class="headerlink" title="请求路径"></a>请求路径</h3><p><code>POST http://dcs.foxitreader.cn/pdf2word/actionid</code></p>
-<h3 id="头部信息-4"><a href="#头部信息-4" class="headerlink" title="头部信息"></a>头部信息</h3><p>content-type : application/json</p>
-<h3 id="请求体"><a href="#请求体" class="headerlink" title="请求体"></a>请求体</h3><p>格式：<code>client_time$action_id$value$uuid$mac$version$channel$product_name$user_id</code></p>
-<p>//取不到的数据在对应位置填空。$符号不能少；</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>值</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>action_id</td>
-<td>100001</td>
-<td>启动量</td>
-</tr>
-<tr>
-<td></td>
-<td>100002</td>
-<td>安装量</td>
-</tr>
-<tr>
-<td></td>
-<td>100003</td>
-<td>卸载量</td>
-</tr>
-<tr>
-<td></td>
-<td>300006</td>
-<td>保护成功</td>
-</tr>
-<tr>
-<td></td>
-<td>300007</td>
-<td>保护失败</td>
-</tr>
-<tr>
-<td></td>
-<td>300008</td>
-<td>认证成功</td>
-</tr>
-<tr>
-<td></td>
-<td>300009</td>
-<td>认证失败</td>
-</tr>
-<tr>
-<td></td>
-<td>300010</td>
-<td>壳文件打开</td>
-</tr>
-<tr>
-<td></td>
-<td>300011</td>
-<td>壳文件点击下载</td>
-</tr>
-<tr>
-<td></td>
-<td>300012</td>
-<td>保护文档打开</td>
-</tr>
-<tr>
-<td></td>
-<td>300013</td>
-<td>保护文档点击登录</td>
-</tr>
-<tr>
-<td></td>
-<td>300014</td>
-<td>保护文档点击阅读</td>
-</tr>
-<tr>
-<td></td>
-<td>300015</td>
-<td>保护文档点击关闭付费弹窗</td>
-</tr>
-<tr>
-<td>product_name</td>
-<td>ProtectMstr</td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//请求数据例子：</span><br><span class="line">[</span><br><span class="line">    <span class="string">"2018-03-02 13:56:47$1000001$1$uuid$mac$version$0$ProtectMstr$9000006"</span>, </span><br><span class="line"> 	<span class="string">"2018-03-02 13:56:47$1000002$1$uuid$mac$version$0$ProtectMstr$9000006"</span></span><br><span class="line">]</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
     
       
 
@@ -900,14 +324,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posté le</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
 
               
                 
               
 
-              <time title="Article créé le: 2019-04-28 19:35:14" itemprop="dateCreated datePublished" datetime="2019-04-28T19:35:14+08:00">2019-04-28</time>
+              <time title="Erstellt: 2019-04-28 19:35:14" itemprop="dateCreated datePublished" datetime="2019-04-28T19:35:14+08:00">2019-04-28</time>
             
 
             
@@ -922,9 +346,9 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Éditer sur</span>
+                  <span class="post-meta-item-text">Bearbeitet am</span>
                 
-                <time title="Mise à jour le: 2017-10-28 08:39:58" itemprop="dateModified" datetime="2017-10-28T08:39:58+08:00">2017-10-28</time>
+                <time title="Geändert am: 2017-10-28 08:39:58" itemprop="dateModified" datetime="2017-10-28T08:39:58+08:00">2017-10-28</time>
               
             
           </span>
@@ -1052,8 +476,8 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">articles</span>
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">Artikel</span>
                   </a>
                 </div>
               
@@ -1110,7 +534,7 @@
 </div>
 
 
-  <div class="powered-by">Alimenté par <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
 
 
 
@@ -1118,7 +542,7 @@
 
 
 
-  <div class="theme-info">Thème – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.1.0</div>
+  <div class="theme-info">Design – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.1.0</div>
 
 
 
