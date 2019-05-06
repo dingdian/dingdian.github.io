@@ -1765,7 +1765,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #26ffff;
+  background: #87c454;
 }
 .feed-link,
 .chat {
@@ -2682,14 +2682,7 @@ hr {
     text-align: center;
   }
 }
-.footer-inner {
-  height: 28px;
-}
 .copyright {
-  float: left;
+  float: inhirit;
   margin-left: 20px;
-}
-.busuanzi-count {
-  float: right;
-  margin-right: 20px;
 }
