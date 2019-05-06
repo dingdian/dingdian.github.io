@@ -1765,7 +1765,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #87c454;
+  background: #5dff04;
 }
 .feed-link,
 .chat {
@@ -2682,7 +2682,6 @@ hr {
     text-align: center;
   }
 }
-.copyright {
-  float: inhirit;
-  margin-left: 20px;
+.footer-inner {
+  text-align: center;
 }
