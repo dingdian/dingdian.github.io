@@ -1740,7 +1740,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff411b;
+  background: #ff5885;
 }
 .feed-link,
 .chat {
@@ -2729,4 +2729,15 @@ hr {
   .footer {
     margin-top: 0px;
   }
+}
+.pace .pace-progress {
+  background: #1e92fb; /*进度条颜色*/
+  height: 3px;
+}
+.pace .pace-progress-inner {
+  box-shadow: 0 0 10px #1e92fb, 0 0 5px #1e92fb; /*阴影颜色*/
+}
+.pace .pace-activity {
+  border-top-color: #1e92fb; /*上边框颜色*/
+  border-left-color: #1e92fb; /*左边框颜色*/
 }
