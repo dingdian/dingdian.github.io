@@ -8,8 +8,8 @@
         <category>运维</category>
       </categories>
       <tags>
-        <tag>负载均衡</tag>
         <tag>nginx</tag>
+        <tag>负载均衡</tag>
         <tag>session粘性</tag>
       </tags>
   </entry>
@@ -21,9 +21,9 @@
         <category>运维</category>
       </categories>
       <tags>
-        <tag>负载均衡</tag>
         <tag>nginx</tag>
         <tag>linux</tag>
+        <tag>负载均衡</tag>
       </tags>
   </entry>
   <entry>

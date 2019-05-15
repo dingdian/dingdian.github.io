@@ -116,7 +116,7 @@
 
 
   <meta name="description" content="由于公司的系统使用到session，刚做好的负载均衡多机环境下会导致取不到信息的问题，这里采用sticky模块解决。session粘性是一个比较省成本的解决方案，虽然有很多问题。 追加安装sticky模块1.下载地址：http://code.google.com/p/nginx-sticky-module/downloads/list 或者： wget https://code.google.co">
-<meta name="keywords" content="负载均衡,nginx,session粘性">
+<meta name="keywords" content="nginx,负载均衡,session粘性">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ngxin追加sticky模块实现session粘性">
 <meta property="og:url" content="https://www.lincw.net/posts/2019/05/08/ngxin追加sticky模块实现session粘性/index.html">
@@ -537,9 +537,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/负载均衡/" rel="tag"><i class="fa fa-tag"></i> 负载均衡</a>
-          
             <a href="/tags/nginx/" rel="tag"><i class="fa fa-tag"></i> nginx</a>
+          
+            <a href="/tags/负载均衡/" rel="tag"><i class="fa fa-tag"></i> 负载均衡</a>
           
             <a href="/tags/session粘性/" rel="tag"><i class="fa fa-tag"></i> session粘性</a>
           
@@ -900,15 +900,20 @@
   
     
 
-<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  
+
+<script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
 
 
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+  
+
+<link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
 
 
 
-<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+
 
 <script>
   var gitalk = new Gitalk({
@@ -917,7 +922,8 @@
     repo: 'dingdian.github.io',
     owner: 'dingdian',
     admin: ['dingdian'],
-    id: md5(location.pathname),
+    
+    id: location.pathname,
     
       language: 'zh-CN',
     
