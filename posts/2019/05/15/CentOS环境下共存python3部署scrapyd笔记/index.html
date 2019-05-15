@@ -115,20 +115,21 @@
 
 
 
-  <meta name="description" content="Nginx负载均衡配置nginx能够配置代理多台服务器。当一台服务器宕机之后。仍能保持系统可用。 关键配置示例1234567891011121314151617181920212223http &amp;#123;    ...	upstream nodes &amp;#123;		server 192.168.1.15:8080  weight=5;		server 192.168.1.16:8080  wei">
-<meta name="keywords" content="nginx,linux,负载均衡">
+  <meta name="description" content="为了使爬虫支持javascript，爬虫的使用了selenium，所以本文也会宝行seleniun与phantomjs的安装配置。 可能需要的依赖有： 1[root@localhost ~]# yum -y install openssl-devel libffi-devel tk-devel bzip2 openssl-devel：缺少该依赖scrapyd虽然可以安装成功，但是运行会报错 lib">
+<meta name="keywords" content="爬虫,scrapy,scrapyd,selenium,phantomjs">
 <meta property="og:type" content="article">
-<meta property="og:title" content="NGINX负载均衡配置">
-<meta property="og:url" content="https://www.lincw.net/posts/2019/05/07/NGINX负载均衡配置/index.html">
+<meta property="og:title" content="CentOS环境下共存python3部署scrapyd笔记">
+<meta property="og:url" content="https://www.lincw.net/posts/2019/05/15/CentOS环境下共存python3部署scrapyd笔记/index.html">
 <meta property="og:site_name" content="顶点的博客">
-<meta property="og:description" content="Nginx负载均衡配置nginx能够配置代理多台服务器。当一台服务器宕机之后。仍能保持系统可用。 关键配置示例1234567891011121314151617181920212223http &amp;#123;    ...	upstream nodes &amp;#123;		server 192.168.1.15:8080  weight=5;		server 192.168.1.16:8080  wei">
+<meta property="og:description" content="为了使爬虫支持javascript，爬虫的使用了selenium，所以本文也会宝行seleniun与phantomjs的安装配置。 可能需要的依赖有： 1[root@localhost ~]# yum -y install openssl-devel libffi-devel tk-devel bzip2 openssl-devel：缺少该依赖scrapyd虽然可以安装成功，但是运行会报错 lib">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://www.lincw.net/images/270324-20160515112210586-1536184723.png">
-<meta property="og:updated_time" content="2019-05-08T01:42:00.000Z">
+<meta property="og:image" content="https://www.lincw.net/images/20190515204419.png">
+<meta property="og:image" content="https://www.lincw.net/images/image_14953.png">
+<meta property="og:updated_time" content="2019-05-15T13:10:02.876Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="NGINX负载均衡配置">
-<meta name="twitter:description" content="Nginx负载均衡配置nginx能够配置代理多台服务器。当一台服务器宕机之后。仍能保持系统可用。 关键配置示例1234567891011121314151617181920212223http &amp;#123;    ...	upstream nodes &amp;#123;		server 192.168.1.15:8080  weight=5;		server 192.168.1.16:8080  wei">
-<meta name="twitter:image" content="https://www.lincw.net/images/270324-20160515112210586-1536184723.png">
+<meta name="twitter:title" content="CentOS环境下共存python3部署scrapyd笔记">
+<meta name="twitter:description" content="为了使爬虫支持javascript，爬虫的使用了selenium，所以本文也会宝行seleniun与phantomjs的安装配置。 可能需要的依赖有： 1[root@localhost ~]# yum -y install openssl-devel libffi-devel tk-devel bzip2 openssl-devel：缺少该依赖scrapyd虽然可以安装成功，但是运行会报错 lib">
+<meta name="twitter:image" content="https://www.lincw.net/images/20190515204419.png">
 
 
 
@@ -136,7 +137,7 @@
 
   
   
-  <link rel="canonical" href="https://www.lincw.net/posts/2019/05/07/NGINX负载均衡配置/">
+  <link rel="canonical" href="https://www.lincw.net/posts/2019/05/15/CentOS环境下共存python3部署scrapyd笔记/">
 
 
 
@@ -146,7 +147,7 @@
   };
 </script>
 
-  <title>NGINX负载均衡配置 | 顶点的博客</title>
+  <title>CentOS环境下共存python3部署scrapyd笔记 | 顶点的博客</title>
   
 
 
@@ -374,7 +375,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.lincw.net/posts/2019/05/07/NGINX负载均衡配置/">
+    <link itemprop="mainEntityOfPage" href="https://www.lincw.net/posts/2019/05/15/CentOS环境下共存python3部署scrapyd笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dingdian">
@@ -391,7 +392,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">NGINX负载均衡配置
+          <h1 class="post-title" itemprop="name headline">CentOS环境下共存python3部署scrapyd笔记
 
               
             
@@ -417,24 +418,12 @@
                 
               
 
-              <time title="创建时间：2019-05-07 17:42:49" itemprop="dateCreated datePublished" datetime="2019-05-07T17:42:49+08:00">2019-05-07</time>
+              <time title="创建时间：2019-05-15 20:12:29 / 修改时间：21:10:02" itemprop="dateCreated datePublished" datetime="2019-05-15T20:12:29+08:00">2019-05-15</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-05-08 09:42:00" itemprop="dateModified" datetime="2019-05-08T09:42:00+08:00">2019-05-08</time>
               
             
           </span>
@@ -452,6 +441,13 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/运维/" itemprop="url" rel="index"><span itemprop="name">运维</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/运维/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a></span>
 
                 
                 
@@ -493,29 +489,41 @@
       
 
       
-        <h1 id="Nginx负载均衡配置"><a href="#Nginx负载均衡配置" class="headerlink" title="Nginx负载均衡配置"></a>Nginx负载均衡配置</h1><p>nginx能够配置代理多台服务器。当一台服务器宕机之后。仍能保持系统可用。</p>
-<h2 id="关键配置示例"><a href="#关键配置示例" class="headerlink" title="关键配置示例"></a>关键配置示例</h2><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">http</span> &#123;</span><br><span class="line">    ...</span><br><span class="line">	<span class="attribute">upstream</span> nodes &#123;</span><br><span class="line">		<span class="attribute">server</span> <span class="number">192.168.1.15:8080</span>  weight=<span class="number">5</span>;</span><br><span class="line">		<span class="attribute">server</span> <span class="number">192.168.1.16:8080</span>  weight=<span class="number">5</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="section">server</span> &#123;</span><br><span class="line">		<span class="attribute">listen</span>       <span class="number">80</span>;</span><br><span class="line">		<span class="attribute">server_name</span>  localhost;</span><br><span class="line">		<span class="comment">#charset koi8-r;</span></span><br><span class="line">		<span class="comment">#access_log  logs/host.access.log  main;</span></span><br><span class="line">		<span class="attribute">location</span> / &#123;</span><br><span class="line">			<span class="attribute">root</span>   html;</span><br><span class="line">			<span class="attribute">index</span>  index.html index.htm;</span><br><span class="line">			<span class="attribute">proxy_pass</span>    http://nodes;</span><br><span class="line">			<span class="attribute">proxy_redirect</span> default;</span><br><span class="line">			<span class="comment">#跟代理服务器连接的超时时间，必须留意这个time out时间不能超过75秒，当一台服务器当掉时，过10秒转发到另外一台服务器。</span></span><br><span class="line">			<span class="attribute">proxy_connect_timeout</span> <span class="number">10</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		...</span><br><span class="line">    &#125;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="upstream配置说明："><a href="#upstream配置说明：" class="headerlink" title="upstream配置说明："></a>upstream配置说明：</h2><h3 id="轮询："><a href="#轮询：" class="headerlink" title="轮询："></a>轮询：</h3><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">upstream</span> nodes &#123;</span><br><span class="line">	<span class="attribute">server</span> <span class="number">192.168.10.1:8668</span>;</span><br><span class="line">	<span class="attribute">server</span> <span class="number">192.168.10.2:8668</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>上面配置的上游服务器按照默认的轮询方式进行请求。如果上游服务器挂掉，能自己主动剔除，无需手动干预。这种方式简单快捷。但是如果上游服务器在配置不均衡的情况下，是解决不了的。</p>
-<h3 id="权重配置："><a href="#权重配置：" class="headerlink" title="权重配置："></a>权重配置：</h3><p>weight和请求数量成正比，主要用于上游服务器配置不均衡的情况。下面的配置中，192.168.10.2机器的请求量是192.168.10.1机器请求量的2倍。<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">upstream</span> nodes &#123;</span><br><span class="line">	<span class="attribute">server</span> <span class="number">192.168.10.1:8668</span> weight=<span class="number">5</span>;</span><br><span class="line">	<span class="attribute">server</span> <span class="number">192.168.10.2:8668</span> weight=<span class="number">10</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="fair-配置："><a href="#fair-配置：" class="headerlink" title="fair 配置："></a>fair 配置：</h3><p>公平地按照后端服务器的响应时间（rt）来分配请求，响应时间短即rt小的后端服务器优先分配请求。如果需要使用这种调度算法，必须下载Nginx的upstr_fair模块。</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">upstream</span> backend &#123;</span><br><span class="line">	<span class="attribute">server</span> <span class="number">192.168.1.101</span>;</span><br><span class="line">	<span class="attribute">server</span> <span class="number">192.168.1.102</span>;</span><br><span class="line">	<span class="attribute">server</span> <span class="number">192.168.1.103</span>;</span><br><span class="line">	fair;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="ip-hash配置："><a href="#ip-hash配置：" class="headerlink" title="ip_hash配置："></a>ip_hash配置：</h3><p>每一个请求按照请求的ip的hash结果分配。这样每一个请求固定落在一个上游服务器，能够解决ip会话在同一台服务器的问题。<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">upstream</span> nodes &#123;</span><br><span class="line">    ip_hash;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.10.1:8668</span>;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.10.2:8668</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>注意：<br>1、当负载调度算法为ip_hash时，后端服务器在负载均衡调度中的状态不能是weight和backup。<br>2、导致负载不均衡。</p>
-<h3 id="upstream-hash配置："><a href="#upstream-hash配置：" class="headerlink" title="upstream_hash配置："></a>upstream_hash配置：</h3><p>url_hash按照访问的url的hash结果来分配请求，使每一个url定向到同一个上游服务器。</p>
-<p>注意：在upstream中加入hash语句。server语句中不能写入weight等其他的參数，hash_method是使用的hash算法。</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">upstream</span> nodes &#123;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.10.1:8668</span>;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.10.2:8668</span>;</span><br><span class="line">    <span class="attribute">hash</span> <span class="variable">$request_uri</span>;</span><br><span class="line">    <span class="attribute">hash_method</span> crc32;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>upstream_hash这个第三方模块，这个模块多数情况下是用作url_hash的，但是并不妨碍将它用来做session共享：</p>
-<p>上面的例子使用$request_uri做因子，稍微改一下：</p>
-<p>hash   $http_x_forwarded_for;</p>
-<p>这样就改成了利用x_forwarded_for这个头作因子，在nginx新版本中可支持读取cookie值，所以也可以改成：</p>
-<p>hash   $cookie_jsessionid;</p>
-<h2 id="upstream中常用的配置项："><a href="#upstream中常用的配置项：" class="headerlink" title="upstream中常用的配置项："></a><strong>upstream中常用的配置项：</strong></h2><p>down：表示当前的server不參与负载均衡。</p>
-<p>weight：默认1，weight越大，负载的权重就越大。</p>
-<p>max_fails ：允许请求失败的次数，默认为1。即默认情况是只要发生错误就认为服务器挂掉了，如果将max_fails设置为0，则表示取消这项检查。</p>
-<p>fail_timeout : max_fails次失败后，暂停请求此台服务器的时间。</p>
-<p>backup： 其他全部的非backup机器down或者忙的时候，请求backup机器。所以这台机器压力会最轻。<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">upstream</span> nodes &#123;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.10.1:8668</span> down;</span><br><span class="line">    server 192.168.10.2:8668 weight=2 max_fails=2 fail_timeout=1;  ;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.10.3:8668</span> max_fails=<span class="number">2</span> fail_timeout=<span class="number">2</span>;</span><br><span class="line">    <span class="attribute">server</span> <span class="number">192.168.10.4:8668</span> backup;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<div align="center"><br><img src="/images/270324-20160515112210586-1536184723.png" alt="负载参数说明"><br></div>
+        <p>为了使爬虫支持javascript，爬虫的使用了selenium，所以本文也会宝行seleniun与phantomjs的安装配置。</p>
+<p>可能需要的依赖有：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# yum -y install openssl-devel libffi-devel tk-devel bzip2</span><br></pre></td></tr></table></figure>
+<p>openssl-devel：缺少该依赖scrapyd虽然可以安装成功，但是运行会报错</p>
+<p>libffi-devel  tk-devel：将报错ModuleNotFoundError: No module named ‘_ctypes’</p>
+<p>bzip2：用于源码解压</p>
+<h1 id="一、Python3共存安装"><a href="#一、Python3共存安装" class="headerlink" title="一、Python3共存安装"></a>一、Python3共存安装</h1><h2 id="1-下载Python最新源码"><a href="#1-下载Python最新源码" class="headerlink" title="1.下载Python最新源码"></a>1.下载Python最新源码</h2><p>官网：<a href="https://www.python.org/downloads/source/" target="_blank" rel="noopener">https://www.python.org/downloads/source/</a></p>
+<p>下载最新稳定版代码并解压</p>
+<h2 id="2-开启-ssl模块"><a href="#2-开启-ssl模块" class="headerlink" title="2. 开启_ssl模块"></a>2. 开启_ssl模块</h2><p>scrapyd运行需要python3开启_ssl相关代码，否则报缺失ssl模块错误。开启方法：</p>
+<p>首先进入Python-3.7.3/Modules目录下，编辑Setup.dist与Setup文件（大概在50%的位置），将红线处注释去掉</p>
+<div align="center"><br><img src="/images/20190515204419.png" alt><br></div>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>SSL=/usr/local/ssl</span><br><span class="line"><span class="meta">#</span>_ssl _ssl.c \</span><br><span class="line"><span class="meta">#</span>       -DUSE_SSL -I$(SSL)/include -I$(SSL)/include/openssl \</span><br><span class="line"><span class="meta">#</span>       -L$(SSL)/lib -lssl -lcrypto</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> Socket module helper for socket(2)</span><br><span class="line">_socket socketmodule.c</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> Socket module helper for SSL support; you must comment out the other</span><br><span class="line"><span class="meta">#</span> socket line above, and possibly edit the SSL variable:</span><br><span class="line">SSL=/usr/local/ssl</span><br><span class="line">_ssl _ssl.c \</span><br><span class="line">        -DUSE_SSL -I$(SSL)/include -I$(SSL)/include/openssl \</span><br><span class="line">        -L$(SSL)/lib -lssl -lcrypto</span><br></pre></td></tr></table></figure>
+<h2 id="3-安装sqlite3"><a href="#3-安装sqlite3" class="headerlink" title="3. 安装sqlite3"></a>3. 安装sqlite3</h2><p>编译python3 之前需要先加入sqlite3，缺少该模块scrapyd运行报错：</p>
+<p>builtins.ModuleNotFoundError: No module named ‘_sqlite3’</p>
+<p>尝试过直接使用yum直接安装，但是scrapyd依旧无法调用相应的库。解决方法如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# wget https://www.sqlite.org/2017/sqlite-autoconf-3170000.tar.gz --no-check-certificate</span><br><span class="line">[root@localhost ~]# tar xf  sqlite-autoconf-3170000.tar.gz</span><br><span class="line">[root@localhost ~]# cd sqlite-autoconf-3170000/</span><br><span class="line">[root@localhost ~]# ./configure --prefix=/usr/local/sqlite3 --disable-static --enable-fts5 --enable-json1 CFLAGS="-g -O2 -DSQLITE_ENABLE_FTS3=1 -DSQLITE_ENABLE_FTS4=1 -DSQLITE_ENABLE_RTREE=1"</span><br><span class="line">[root@localhost ~]# make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
+<p>编译Python3.7</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# LD_RUN_PATH=/usr/local/sqlite3/lib ./configure LDFLAGS="-L/usr/local/sqlite3/lib" CPPFLAGS="-I /usr/local/sqlite3/include"</span><br><span class="line">[root@localhost ~]# LD_RUN_PATH=/usr/local/sqlite3/lib make</span><br><span class="line">[root@localhost ~]# LD_RUN_PATH=/usr/local/sqlite3/lib sudo make install</span><br></pre></td></tr></table></figure>
+<p>运行python3 -V查看是否安装成功</p>
+<p>若无法找到python3命令，则建立软链接到/usr/bin</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# ln -s /usr/local/bin/python3 /usr/bin/python3</span><br><span class="line">[root@localhost ~]# ln -s /usr/local/bin/pip3 /usr/bin/pip3</span><br></pre></td></tr></table></figure>
+<p>运行python3进入python交互界面输入：import sqlite3没报错说明sqlite3安装成功。</p>
+<p>Python3共存安装到此完成，运行python用的是系统自带的额python2，运行python3则调用新安装的Python3。</p>
+<h1 id="二、Scrapy安装"><a href="#二、Scrapy安装" class="headerlink" title="二、Scrapy安装"></a>二、Scrapy安装</h1><p>新装的Python最好升级一下pip运行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# pip3 install --upgrade pip</span><br></pre></td></tr></table></figure>
+<h2 id="1-安装Twisted依赖"><a href="#1-安装Twisted依赖" class="headerlink" title="1.安装Twisted依赖"></a>1.安装Twisted依赖</h2><p>下载Twisted 18.9（不要使用最新版的19.0 ，否则后续查看jobs的页面的时候会报错：<strong>builtins.AttributeError: ‘int’ object has no attribute ‘splitlines’</strong>）</p>
+<div align="center"><br><img src="/images/image_14953.png" alt><br></div>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# wget https://twistedmatrix.com/Releases/Twisted/18.9/Twisted-18.9.0.tar.bz2</span><br><span class="line">[root@localhost ~]# tar -jxvf Twisted-18.9.0.tar.bz2</span><br><span class="line">[root@localhost ~]# cd Twisted-18.9.0</span><br><span class="line">[root@localhost ~]# python3 setup.py install</span><br></pre></td></tr></table></figure>
+<h2 id="2-安装Scrapy"><a href="#2-安装Scrapy" class="headerlink" title="2.安装Scrapy"></a>2.安装Scrapy</h2><p>直接使用pip安装</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# pip3 install Scrapy</span><br><span class="line">[root@localhost ~]# scrapy version</span><br></pre></td></tr></table></figure>
+<p>能看到Scrapy的版本，安装成功</p>
+<p>—先写到这，明天再战</p>
+
       
     </div>
 
@@ -538,11 +546,15 @@
       
         <div class="post-tags">
           
-            <a href="/tags/nginx/" rel="tag"><i class="fa fa-tag"></i> nginx</a>
+            <a href="/tags/爬虫/" rel="tag"><i class="fa fa-tag"></i> 爬虫</a>
           
-            <a href="/tags/linux/" rel="tag"><i class="fa fa-tag"></i> linux</a>
+            <a href="/tags/scrapy/" rel="tag"><i class="fa fa-tag"></i> scrapy</a>
           
-            <a href="/tags/负载均衡/" rel="tag"><i class="fa fa-tag"></i> 负载均衡</a>
+            <a href="/tags/scrapyd/" rel="tag"><i class="fa fa-tag"></i> scrapyd</a>
+          
+            <a href="/tags/selenium/" rel="tag"><i class="fa fa-tag"></i> selenium</a>
+          
+            <a href="/tags/phantomjs/" rel="tag"><i class="fa fa-tag"></i> phantomjs</a>
           
         </div>
       
@@ -555,8 +567,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/posts/2019/05/06/crontab命令/" rel="next" title="crontab命令">
-                <i class="fa fa-chevron-left"></i> crontab命令
+              <a href="/posts/2019/05/08/ngxin追加sticky模块实现session粘性/" rel="next" title="ngxin追加sticky模块实现session粘性">
+                <i class="fa fa-chevron-left"></i> ngxin追加sticky模块实现session粘性
               </a>
             
           </div>
@@ -564,10 +576,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/posts/2019/05/08/ngxin追加sticky模块实现session粘性/" rel="prev" title="ngxin追加sticky模块实现session粘性">
-                ngxin追加sticky模块实现session粘性 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -744,7 +752,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Nginx负载均衡配置"><span class="nav-number">1.</span> <span class="nav-text">Nginx负载均衡配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关键配置示例"><span class="nav-number">1.1.</span> <span class="nav-text">关键配置示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#upstream配置说明："><span class="nav-number">1.2.</span> <span class="nav-text">upstream配置说明：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#轮询："><span class="nav-number">1.2.1.</span> <span class="nav-text">轮询：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#权重配置："><span class="nav-number">1.2.2.</span> <span class="nav-text">权重配置：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fair-配置："><span class="nav-number">1.2.3.</span> <span class="nav-text">fair 配置：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ip-hash配置："><span class="nav-number">1.2.4.</span> <span class="nav-text">ip_hash配置：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#upstream-hash配置："><span class="nav-number">1.2.5.</span> <span class="nav-text">upstream_hash配置：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#upstream中常用的配置项："><span class="nav-number">1.3.</span> <span class="nav-text">upstream中常用的配置项：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、Python3共存安装"><span class="nav-number">1.</span> <span class="nav-text">一、Python3共存安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-下载Python最新源码"><span class="nav-number">1.1.</span> <span class="nav-text">1.下载Python最新源码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-开启-ssl模块"><span class="nav-number">1.2.</span> <span class="nav-text">2. 开启_ssl模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-安装sqlite3"><span class="nav-number">1.3.</span> <span class="nav-text">3. 安装sqlite3</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、Scrapy安装"><span class="nav-number">2.</span> <span class="nav-text">二、Scrapy安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-安装Twisted依赖"><span class="nav-number">2.1.</span> <span class="nav-text">1.安装Twisted依赖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装Scrapy"><span class="nav-number">2.2.</span> <span class="nav-text">2.安装Scrapy</span></a></li></ol></li></ol></div>
             
 
           </div>
