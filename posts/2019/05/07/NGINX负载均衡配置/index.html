@@ -917,8 +917,7 @@
 
 
 
-
-
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
 
 <script>
   var gitalk = new Gitalk({
@@ -927,8 +926,7 @@
     repo: 'dingdian.github.io',
     owner: 'dingdian',
     admin: ['dingdian'],
-    
-    id: location.pathname,
+    id: md5(location.pathname),
     
       language: 'zh-CN',
     
