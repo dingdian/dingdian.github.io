@@ -1740,7 +1740,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7f608e;
+  background: #6f4dff;
 }
 .feed-link,
 .chat {
@@ -2732,7 +2732,7 @@ hr {
 }
 @media (max-width: 767px) {
   .comments {
-    margin: 0 20px;
+    margin: -60px 20px 20px 20px;
   }
   .footer {
     margin-top: 0px;
