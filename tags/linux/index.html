@@ -118,7 +118,7 @@
   <meta name="description" content="夫万事万物之理不外于吾心">
 <meta property="og:type" content="website">
 <meta property="og:title" content="顶点的博客">
-<meta property="og:url" content="https://www.lincw.net/tags/linux/index.html">
+<meta property="og:url" content="https://www.lincw.vip/tags/Linux/index.html">
 <meta property="og:site_name" content="顶点的博客">
 <meta property="og:description" content="夫万事万物之理不外于吾心">
 <meta property="og:locale" content="zh-CN">
@@ -132,7 +132,7 @@
 
   
   
-  <link rel="canonical" href="https://www.lincw.net/tags/linux/">
+  <link rel="canonical" href="https://www.lincw.vip/tags/Linux/">
 
 
 
@@ -142,7 +142,7 @@
   };
 </script>
 
-  <title>标签: linux | 顶点的博客</title>
+  <title>标签: Linux | 顶点的博客</title>
   
 
 
@@ -380,7 +380,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>linux<small>标签</small>
+        <h1>Linux<small>标签</small>
         </h1>
       </div>
 
@@ -392,43 +392,17 @@
 
       <h2 class="post-title">
         
-          <a class="post-title-link" href="/posts/2019/05/07/NGINX负载均衡配置/" itemprop="url">
+          <a class="post-title-link" href="/posts/2019/05/15/CentOS环境下共存python3部署scrapyd笔记/" itemprop="url">
             
-              <span itemprop="name">NGINX负载均衡配置</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-07T17:42:49+08:00" content="2019-05-07">
-          05-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/posts/2019/05/06/crontab命令/" itemprop="url">
-            
-              <span itemprop="name">crontab命令</span>
+              <span itemprop="name">CentOS环境下共存python3部署scrapyd笔记</span>
             
           </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-06T20:46:25+08:00" content="2019-05-06">
-          05-06
+        <time class="post-time" itemprop="dateCreated" datetime="2019-05-15T20:12:29+08:00" content="2019-05-15">
+          05-15
         </time>
       </div>
 
@@ -1045,6 +1019,60 @@
     $('.popup-trigger').click(function(e) {
       e.stopPropagation();
       if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+
         searchFunc(path, 'local-search-input', 'local-search-result');
       } else {
         proceedsearch();
