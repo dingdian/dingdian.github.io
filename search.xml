@@ -14,7 +14,7 @@
         <tag>scrapyd</tag>
         <tag>selenium</tag>
         <tag>phantomjs</tag>
-        <tag>Linux</tag>
+        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -38,7 +38,7 @@
         <category>运维</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
+        <tag>linux</tag>
         <tag>nginx</tag>
         <tag>负载均衡</tag>
       </tags>
@@ -51,7 +51,7 @@
         <category>运维</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
+        <tag>linux</tag>
         <tag>crontab</tag>
       </tags>
   </entry>
