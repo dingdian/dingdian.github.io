@@ -38,8 +38,8 @@
         <category>运维</category>
       </categories>
       <tags>
+        <tag>Linux</tag>
         <tag>nginx</tag>
-        <tag>linux</tag>
         <tag>负载均衡</tag>
       </tags>
   </entry>
@@ -51,7 +51,7 @@
         <category>运维</category>
       </categories>
       <tags>
-        <tag>linux</tag>
+        <tag>Linux</tag>
         <tag>crontab</tag>
       </tags>
   </entry>
