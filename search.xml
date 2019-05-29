@@ -25,8 +25,8 @@
         <category>运维</category>
       </categories>
       <tags>
-        <tag>nginx</tag>
         <tag>负载均衡</tag>
+        <tag>nginx</tag>
         <tag>session粘性</tag>
       </tags>
   </entry>
@@ -39,8 +39,8 @@
       </categories>
       <tags>
         <tag>linux</tag>
-        <tag>nginx</tag>
         <tag>负载均衡</tag>
+        <tag>nginx</tag>
       </tags>
   </entry>
   <entry>
