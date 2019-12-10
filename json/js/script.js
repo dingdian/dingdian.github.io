@@ -141,13 +141,13 @@
                     snatch = parseSeparator(snatch);
                     snatch = parseValue(snatch, '}');
                     if (snatch.substring(0, 1) === ',') {
-                        snatch.swap(1).update('');
+                        snatch.swap(1).update('</li>');
                         return parsePair(snatch)
                     }
                     if (snatch.substring(0, 1) === '}') {
-                        return snatch.update('')
+                        return snatch.update('</li>')
                     }
-                    return snatch.err('Comma is missing', snatch.shift(snatch.indexOf('}'))).update('')
+                    return snatch.err('Comma is missing', snatch.shift(snatch.indexOf('}'))).update('</li>')
                 }
                 if (snatch.indexOf('{') === -1) {
                     snatch.err('Opening brace is missing', snatch.todo);
@@ -175,9 +175,9 @@
                         return parseElement(snatch, ++io)
                     }
                     if (snatch.substring(0, 1) === ']') {
-                        return snatch.update('')
+                        return snatch.update('</li>')
                     }
-                    return snatch.err('Comma is missing', snatch.shift(snatch.search(/(,|\])/))).update('')
+                    return snatch.err('Comma is missing', snatch.shift(snatch.search(/(,|\])/))).update('</li>')
                 }
                 if (snatch.indexOf('[') === -1) {
                     snatch.err('Opening square bracket is missing', snatch.todo);
@@ -194,12 +194,12 @@
                 snatch = parseElement(snatch, 0);
                 if (snatch.indexOf(']') === -1) {
                     snatch.err('Closing square bracket is missing', snatch.todo);
-                    snatch.update('<span class="toggle-end" card="' + (io + 1) + '"></span>');
+                    snatch.update('</ol><span class="toggle-end" card="' + (io + 1) + '"></span>');
                     return snatch.update('</span>')
                 }
                 snatch.shift(1);
-                snatch.update('<span class="toggle-end" card="' + (io + 1) + '">]</span>');
-                return snatch.update('')
+                snatch.update('</ol><span class="toggle-end" card="' + (io + 1) + '">]</span>');
+                return snatch.update('</span>')
             }
 
             function parseValue(snatch, closingBracket) {
@@ -350,7 +350,8 @@
             }
             $status.classList.remove('status-error');
             setTimeout(function() {
-                json = json.replace(//g, '&gt;');
+                json = json.replace(/</g, '&lt;');
+                json = json.replace(/>/g, '&gt;');
                 var result = parse(json);
                 $result.innerHTML = result.html;
                 if (result.valid) {
