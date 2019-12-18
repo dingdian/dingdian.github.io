@@ -19,7 +19,8 @@ var mycolor = null;
 // 默认视为已扩展程序启动
 var EXT_ENVIRONMENT = true;
 // 设定域名常量
-var DOMAIN = 'http://www.box3.cn';
+var DOMAIN = '';
+var CONTEXTPATH = '';
 // 公用类库
 var lib = {
 	// 命令行
@@ -804,13 +805,13 @@ var ONE = {
 		PUT.output("1　2　3　4　5　6　7　8　9　10　100　1000\r\n一 二 三 四 五 六 七 八 九 十　百\t千 \r\n壹 贰 叁 肆 伍 陆 柒 捌 玖 拾　佰\t仟");	
 	},
 	'codeview': function() {
-		func.openurl("/page/debug.html");
+		func.openurl("./page/debug.html");
 	},
 	'regular': function() {
-		func.openurl(DOMAIN + "/page/regular.html");
+		func.openurl(DOMAIN + CONTEXTPATH + "./page/regular.html");
 	},
 	'qrcode' : function() {
-		var url = '/page/qrcode.html', tmp = PUT.input();
+		var url = CONTEXTPATH + './page/qrcode.html', tmp = PUT.input();
 		if(tmp.length > 0)
 		{
 			url += '?url=' + encodeURIComponent(tmp);
@@ -818,28 +819,28 @@ var ONE = {
 		func.openurl(url);
 	},
 	'qrcode_reader':function(){
-		func.openurl(DOMAIN + "/page/qrcodereader.html");
+		func.openurl(DOMAIN + CONTEXTPATH + "./page/qrcodereader.html");
 	},
 	'contrast': function() {
-		func.openurl("/page/contrast.html");
+		func.openurl(CONTEXTPATH + "./page/contrast.html");
 	},
 	'ua': function() {
-		func.openurl(DOMAIN + "/page/ua.html");
+		func.openurl(DOMAIN + CONTEXTPATH + "./page/ua.html");
 	},
 	'lbs': function() {
-		func.openurl("/page/lbs.html");
+		func.openurl(CONTEXTPATH + "./page/lbs.html");
 	},
 	'http': function() {
-		func.openurl("/page/httprequest.html");
+		func.openurl(CONTEXTPATH + "./page/httprequest.html");
 	},
 	'websafecolors': function() {
-		func.openurl("/page/websafecolors.html");
+		func.openurl(CONTEXTPATH + "./page/websafecolors.html");
 	},
 	'pintu':function() {
 		func.openurl("http://www.pintuer.com/tools/form.html");
 	},
 	'webforms':function() {
-		func.openurl("/page/webforms.html");
+		func.openurl(CONTEXTPATH + "./page/webforms.html");
 	},
 	'removelinenumber': function(){
 		if(!ONE.init(true)) return false;
