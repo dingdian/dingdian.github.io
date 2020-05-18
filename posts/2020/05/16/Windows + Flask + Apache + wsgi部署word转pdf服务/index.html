@@ -115,18 +115,29 @@
 
 
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta name="keywords" content="npm,hexo">
+  <meta name="description" content="一、安装Apache服务下载最新的Apache：下载地址：https://httpd.apache.org 选择版本的时候需要选择与Python的版本一致的Apache，Apache,mod_wsgi和Python都必须用相同版本的C/C++编译器生成，要么都是32位的，要么都是64位的，不能混用。这边选则x64,vc15的版本。  下载完成后解压到安装目录，修改conf/httpd.conf配置">
+<meta name="keywords" content="flask,wsgi">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://www.lincw.vip/posts/2019/04/28/hello-world/index.html">
+<meta property="og:title" content="Windows + Flask + Apache + wsgi部署word转pdf服务">
+<meta property="og:url" content="https://www.lincw.vip/posts/2020/05/16/Windows + Flask + Apache + wsgi部署word转pdf服务/index.html">
 <meta property="og:site_name" content="顶点的博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="一、安装Apache服务下载最新的Apache：下载地址：https://httpd.apache.org 选择版本的时候需要选择与Python的版本一致的Apache，Apache,mod_wsgi和Python都必须用相同版本的C/C++编译器生成，要么都是32位的，要么都是64位的，不能混用。这边选则x64,vc15的版本。  下载完成后解压到安装目录，修改conf/httpd.conf配置">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-30T01:09:10.141Z">
+<meta property="og:image" content="https://www.lincw.vip/images/adown1.png">
+<meta property="og:image" content="https://www.lincw.vip/images/adown2.png">
+<meta property="og:image" content="https://www.lincw.vip/images/adown3.png">
+<meta property="og:image" content="https://www.lincw.vip/images/adown4.png">
+<meta property="og:image" content="https://www.lincw.vip/images/20200518174102.png">
+<meta property="og:image" content="https://www.lincw.vip/images/20200518180457.png">
+<meta property="og:image" content="https://www.lincw.vip/images/20200518184935.png">
+<meta property="og:image" content="https://www.lincw.vip/images/20200518184417.png">
+<meta property="og:image" content="https://www.lincw.vip/images/20200518184530.png">
+<meta property="og:image" content="https://www.lincw.vip/images/20200518203432.png">
+<meta property="og:updated_time" content="2020-05-18T13:23:51.025Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Windows + Flask + Apache + wsgi部署word转pdf服务">
+<meta name="twitter:description" content="一、安装Apache服务下载最新的Apache：下载地址：https://httpd.apache.org 选择版本的时候需要选择与Python的版本一致的Apache，Apache,mod_wsgi和Python都必须用相同版本的C/C++编译器生成，要么都是32位的，要么都是64位的，不能混用。这边选则x64,vc15的版本。  下载完成后解压到安装目录，修改conf/httpd.conf配置">
+<meta name="twitter:image" content="https://www.lincw.vip/images/adown1.png">
 
 
 
@@ -134,7 +145,7 @@
 
   
   
-  <link rel="canonical" href="https://www.lincw.vip/posts/2019/04/28/hello-world/">
+  <link rel="canonical" href="https://www.lincw.vip/posts/2020/05/16/Windows + Flask + Apache + wsgi部署word转pdf服务/">
 
 
 
@@ -144,7 +155,7 @@
   };
 </script>
 
-  <title>Hello World | 顶点的博客</title>
+  <title>Windows + Flask + Apache + wsgi部署word转pdf服务 | 顶点的博客</title>
   
 
 
@@ -372,7 +383,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.lincw.vip/posts/2019/04/28/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://www.lincw.vip/posts/2020/05/16/Windows + Flask + Apache + wsgi部署word转pdf服务/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dingdian">
@@ -389,7 +400,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World
+          <h1 class="post-title" itemprop="name headline">Windows + Flask + Apache + wsgi部署word转pdf服务
 
               
             
@@ -415,7 +426,7 @@
                 
               
 
-              <time title="创建时间：2019-04-28 19:35:14" itemprop="dateCreated datePublished" datetime="2019-04-28T19:35:14+08:00">2019-04-28</time>
+              <time title="创建时间：2020-05-16 22:27:31" itemprop="dateCreated datePublished" datetime="2020-05-16T22:27:31+08:00">2020-05-16</time>
             
 
             
@@ -432,7 +443,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-04-30 09:09:10" itemprop="dateModified" datetime="2019-04-30T09:09:10+08:00">2019-04-30</time>
+                <time title="修改时间：2020-05-18 21:23:51" itemprop="dateModified" datetime="2020-05-18T21:23:51+08:00">2020-05-18</time>
               
             
           </span>
@@ -449,7 +460,14 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/搭建博客/" itemprop="url" rel="index"><span itemprop="name">搭建博客</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Python/flask/" itemprop="url" rel="index"><span itemprop="name">flask</span></a></span>
 
                 
                 
@@ -491,15 +509,56 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h1 id="一、安装Apache服务"><a href="#一、安装Apache服务" class="headerlink" title="一、安装Apache服务"></a>一、安装Apache服务</h1><h2 id="下载最新的Apache："><a href="#下载最新的Apache：" class="headerlink" title="下载最新的Apache："></a>下载最新的Apache：</h2><p>下载地址：<a href="https://httpd.apache.org" target="_blank" rel="noopener">https://httpd.apache.org</a></p>
+<div align="center"><br><img src="/images/adown1.png" alt><br></div><br><div align="center"><br><img src="/images/adown2.png" alt><br></div><br><div align="center"><br><img src="/images/adown3.png" alt><br></div><br><strong>选择版本的时候需要选择与Python的版本一致的Apache，Apache,mod_wsgi和Python都必须用相同版本的C/C++编译器生成，要么都是32位的，要么都是64位的，不能混用。</strong><br><br>这边选则x64,vc15的版本。<br><br><div align="center"><br><img src="/images/adown4.png" alt><br></div>
+
+<p>下载完成后解压到安装目录，修改conf/httpd.conf配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Define SRVROOT &quot;D:/Apache24&quot;   #修改为对应的安装目录</span><br></pre></td></tr></table></figure>
+<p>可能用到的配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">LoadModule access_compat_module modules/mod_access_compat.so </span><br><span class="line">#基于主机的组授权（名称或IP地址） httpd 2.x兼容的模块，</span><br><span class="line">LoadModule proxy_module modules/mod_proxy.so </span><br><span class="line">#apache的代理模块</span><br><span class="line">LoadModule proxy_http_module modules/mod_proxy_http.so </span><br><span class="line">#代理http和https请求</span><br><span class="line">LoadModule vhost_alias_module modules/mod_vhost_alias.so </span><br><span class="line">#虚拟主机动态配置</span><br><span class="line">LoadModule authz_host_module modules/mod_authz_host.so </span><br><span class="line">#基于主机的组授权</span><br><span class="line">Include conf/extra/httpd-vhosts.conf</span><br><span class="line">#启用虚拟主机配置</span><br></pre></td></tr></table></figure></p>
+<p>命令行启动httpd.exe，并验证是否启动成功，正常显示Apache测试页面就没有问题</p>
+<p>创建Windows 服务<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">httpd.exe -k install -n "apache2.4"  #apache2.4是所创建服务的名称，可更改。</span><br></pre></td></tr></table></figure></p>
+<p>安装服务后就可以使用ApacheMonitor来管理服务的启停了</p>
+<h1 id="二、安装Apache-mod-wsgi模块"><a href="#二、安装Apache-mod-wsgi模块" class="headerlink" title="二、安装Apache mod_wsgi模块"></a>二、安装Apache mod_wsgi模块</h1><h2 id="下载对应版本的mod-wsgi并安装："><a href="#下载对应版本的mod-wsgi并安装：" class="headerlink" title="下载对应版本的mod_wsgi并安装："></a>下载对应版本的mod_wsgi并安装：</h2><p>下载地址：<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/" target="_blank" rel="noopener">https://www.lfd.uci.edu/~gohlke/pythonlibs/</a><br>找到对应版本的whl文件下载</p>
+<div align="center"><br><img src="/images/20200518174102.png" alt><br></div>
+
+<p><strong>Apache和mod_wsgi 必须选择相同位数相同VC编译版本（比如：都是x64 VC14编译）</strong><br>这边选择Apache24版本vc15编译Python3.7 64位版</p>
+<p>下载完成后就可以直接通过pip工具来进行安装</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install "mod_wsgi‑4.7.1+ap24vc15‑cp37‑cp37m‑win_amd64.whl"</span><br></pre></td></tr></table></figure>
+<p>安装后运行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mod_wsgi-express module-config</span><br></pre></td></tr></table></figure>
+<p>获取配置信息</p>
+<div align="center"><br><img src="/images/20200518180457.png" alt><br></div>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">LoadFile "c:/users/lin/appdata/local/programs/python/python37/python37.dll"</span><br><span class="line">LoadModule wsgi_module "c:/users/lin/appdata/local/programs/python/python37/lib/site-packages/mod_wsgi/server/mod_wsgi.cp37-win_amd64.pyd"</span><br><span class="line">WSGIPythonHome "c:/users/lin/appdata/local/programs/python/python37"</span><br></pre></td></tr></table></figure>
+<p>配置信息需要存下来，后续配置需要用到</p>
+<h2 id="配置mod-wsgi模块："><a href="#配置mod-wsgi模块：" class="headerlink" title="配置mod_wsgi模块："></a>配置mod_wsgi模块：</h2><p>再次打开httpd.conf文件，再最末尾添加如下代码，具体解释看注释，实际情况根据自己的项目位置更改。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 1.安装wsgi模块后，出来的三行字符，直接复制过来</span><br><span class="line">LoadFile &quot;c:/users/lin/appdata/local/programs/python/python37/python37.dll&quot;</span><br><span class="line">LoadModule wsgi_module &quot;c:/users/lin/appdata/local/programs/python/python37/lib/site-packages/mod_wsgi/server/mod_wsgi.cp37-win_amd64.pyd&quot;</span><br><span class="line">WSGIPythonHome &quot;c:/users/lin/appdata/local/programs/python/python37&quot;</span><br><span class="line"># 2.设置工程中的wsgi路径</span><br><span class="line">WSGIScriptAlias / c:/home/web/word2pdf.wsgi</span><br><span class="line"># 3.设置工程路径</span><br><span class="line">WSGIPythonPath c:/home/web</span><br><span class="line"># 4.设置wsgi路径</span><br><span class="line">&lt;Directory c:/home/web&gt;</span><br><span class="line">    &lt;Files word2pdf.wsgi&gt;</span><br><span class="line">        Require all granted</span><br><span class="line">    &lt;/Files&gt;</span><br><span class="line">&lt;/Directory&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="word2pdf-wsgi内容"><a href="#word2pdf-wsgi内容" class="headerlink" title="word2pdf.wsgi内容"></a>word2pdf.wsgi内容</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line">sys.path.insert(<span class="number">0</span>, <span class="string">"C:/home/web"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> word2pdf <span class="keyword">import</span> app</span><br><span class="line"></span><br><span class="line">application = app</span><br></pre></td></tr></table></figure>
+<p>本例word2pdf.py 与 wsgi文件在同一层级</p>
+<h1 id="三、Windows-服务下启动Apache无法调用Word软件问题解决方案"><a href="#三、Windows-服务下启动Apache无法调用Word软件问题解决方案" class="headerlink" title="三、Windows 服务下启动Apache无法调用Word软件问题解决方案"></a>三、Windows 服务下启动Apache无法调用Word软件问题解决方案</h1><p>系统部署后发现，当使用命令行启动Apache的时候，可以正常调起Word程序进行转换，但当Apache改成服务方式启动，程序就会报错。经调查后发现是由于Windows Vista/2008起Windows改变了COM对象默认的交互方式为“非交互”型的。命令行启动本身支持应用交互，但service模式下就不行了。所以需要修改Word DCOM默认的标识，改为“交互式用户”模式，即可正常调用了。</p>
+<ul>
+<li><p>在”开始”-&gt;”运行”中输入dcomcnfg.exe启动”组件服务” </p>
+</li>
+<li><p>依次双击”组件服务”-&gt;”计算机”-&gt;”我的电脑”-&gt;”DCOM配置” </p>
+</li>
+<li><p>在”DCOM配置”中找到”Microsoft Word 97 - 2003 Document”，击右键,然后点击”属性”，选标识，将启动用户改成交互式用户</p>
+<div align="center"><br><img src="/images/20200518184935.png" alt><br></div>
+</li>
+<li><p>在安全选项卡中启动与激活权限改成自定义，点编辑，看看当前登录用户时候有在列表中，如果没在列表中点击添加，对象名称中输入用户名确认返回。</p>
+<div align="center"><br><img src="/images/20200518184417.png" alt><br></div>
+
+<div align="center"><br><img src="/images/20200518184530.png" alt><br></div>
+</li>
+<li><p>权限中勾选本地启动和本地激活两项。</p>
+</li>
+<li><p>同样的方法设置“访问权限”中勾选本地访问权限。</p>
+<div align="center"><br><img src="/images/20200518203432.png" alt><br></div>
+
+
+</li>
+</ul>
+<blockquote>
+<p>[1] <a href="https://www.cnblogs.com/onlyou13/p/10472779.html" target="_blank" rel="noopener">Windows + Flask + Apache + wsgi踏坑总结</a><br>[2] <a href="https://www.jianshu.com/p/598d8b5fbee6" target="_blank" rel="noopener">Windows下部Django（Apache+mod_wsgi）</a><br>[3] <a href="https://blog.csdn.net/plean/article/details/74749675" target="_blank" rel="noopener">如何解决Windows Server 2008 服务启动不能调用Office Word的问题</a><br>[4] <a href="https://www.cnblogs.com/chen110xi/p/4874917.html" target="_blank" rel="noopener">window2008 64位系统无法调用Microsoft.Office.Interop组件进行文件另存的解决办法</a> </p>
+</blockquote>
 
       
     </div>
@@ -523,9 +582,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/npm/" rel="tag"><i class="fa fa-tag"></i> npm</a>
+            <a href="/tags/flask/" rel="tag"><i class="fa fa-tag"></i> flask</a>
           
-            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+            <a href="/tags/wsgi/" rel="tag"><i class="fa fa-tag"></i> wsgi</a>
           
         </div>
       
@@ -538,15 +597,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/posts/2019/05/15/CentOS环境下共存python3部署scrapyd笔记/" rel="next" title="CentOS环境下共存python3部署scrapyd笔记">
+                <i class="fa fa-chevron-left"></i> CentOS环境下共存python3部署scrapyd笔记
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/posts/2019/05/06/crontab命令/" rel="prev" title="crontab命令">
-                crontab命令 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -731,7 +790,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、安装Apache服务"><span class="nav-number">1.</span> <span class="nav-text">一、安装Apache服务</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载最新的Apache："><span class="nav-number">1.1.</span> <span class="nav-text">下载最新的Apache：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、安装Apache-mod-wsgi模块"><span class="nav-number">2.</span> <span class="nav-text">二、安装Apache mod_wsgi模块</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载对应版本的mod-wsgi并安装："><span class="nav-number">2.1.</span> <span class="nav-text">下载对应版本的mod_wsgi并安装：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置mod-wsgi模块："><span class="nav-number">2.2.</span> <span class="nav-text">配置mod_wsgi模块：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#word2pdf-wsgi内容"><span class="nav-number">2.3.</span> <span class="nav-text">word2pdf.wsgi内容</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、Windows-服务下启动Apache无法调用Word软件问题解决方案"><span class="nav-number">3.</span> <span class="nav-text">三、Windows 服务下启动Apache无法调用Word软件问题解决方案</span></a></li></ol></div>
             
 
           </div>
