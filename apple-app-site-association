@@ -3,8 +3,8 @@
         "apps": [],
         "details": [
             {
-                "appID": "P9FUVF646B.com.ffcs.debugTest999.app",
-                "paths": [ "/info/*", "/mobile/*"]
+                "appID": "2GSY25VAM2.com.ffcs.debugTest999",
+                "paths": [ "/posts/*", "/posts/2020/*"]
             }
         ]
     }
