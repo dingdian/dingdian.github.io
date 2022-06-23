@@ -1,0 +1,15 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "2GSY25VAM2.com.ffcs.debugTest999",
+                "paths": [ "/posts/*", "/posts/2020/*"]
+            },
+            {
+                "appID": "P9FUVF646B.com.ffcs.debugTest999",
+                "paths": [ "*"]
+            }
+        ]
+    }
+}
